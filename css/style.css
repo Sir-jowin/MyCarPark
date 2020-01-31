@@ -1,0 +1,316 @@
+.grid-container{
+    max-width: 1500px;
+    
+}
+
+
+div.parent{
+    
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background-color: #262851;
+}
+
+div.parent header{
+    position: relative;
+    padding: 30px 0px;
+    z-index: 3;
+}
+
+div.parent header a.logo{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: lowercase;
+    text-decoration: none;
+    
+}
+
+div.parent header ul.nav {
+    float: right;
+}
+
+div.parent header ul.nav li{
+    float: left;
+    list-style: none;
+}
+
+div.parent header ul.navigation{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+div.parent header ul.navigation li{
+    margin-right: 60px;
+}
+
+div.parent header ul.navigation li a{
+    color: rgba(255, 255, 255, 0.60);
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+div.parent header ul.navigation li a:hover{
+    color: #fff;
+}
+
+div.parent header ul.navigation li a:hover:after{
+    content: "";
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    margin-left: 7px;
+    border-radius: 50%;
+    background: #d71758;
+}
+
+div.parent header ul.social-icons li{
+    margin-left: 20px;
+}
+div.parent header ul.social-icons li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: #4b4c68;
+    border: 2px solid #262851;
+    transition: all 250ms ease-in-out;
+}
+div.parent header ul.social-icons li a:hover{
+    color: #d71758;
+    background-color: #fff;
+    border: 1px solid #4d4c68;
+}
+
+div.parent header ul.social-icons li:nth-child(1) a:hover{
+    color: #ec1c24;
+
+}
+
+div.parent header ul.social-icons li:nth-child(2) a:hover{
+
+color: #00a8f3;
+
+}
+
+div.parent header ul.social-icons li:nth-child(3) a:hover{
+    color: gold;
+}
+
+div.parent section{
+    position: relative;
+}
+
+div.parent section span.year{
+    font-size: 43em;
+    font-weight: 600;
+    font-family: serif display;
+    position: absolute;
+    bottom: px;
+    color:#22234a
+}
+
+div.parent section .car-details {
+    position: relative;
+    top: 60px;
+}
+
+div.parent section .car-details h1.name {
+    font-size: 70px;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-family: serif display;
+    margin-bottom: 40px;
+    line-height: 70px;
+    color: #d71758;
+}
+
+div.parent section .car-details h1.name span{
+    font-size: 110px;
+    color: #fff;
+}
+
+div.parent section .car-details p.about{
+    font-size: 14px;
+    color: #fff;
+    width: 60%;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 25px;
+    margin-bottom: 50px;
+}
+
+div.parent section .car-details h4.production-year{
+    font-style: 14px;
+    font-family: mada;
+    line-height: 25px;
+    color: rgba(255, 255, 255, 0.50);
+    margin-bottom: 50px;
+}
+
+div.parent section .car-details h4.production-year span{
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+}
+
+div.parent section .car-details a.btn-discover{
+    background-color: #d71758;
+    border: 2px solid #fea500;
+    padding: 10px 10px 10px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 5px;
+    display: inline-flex;
+    align-items: center;
+
+    
+
+}
+
+div.parent section .car-details a.btn-discover span{
+    padding-right: 5px;
+    position: relative;
+}
+
+div.parent section .car-details a.btn-discover i{
+    position: relative;
+}
+
+
+
+div.parent section .car-details a.btn-discover:after{
+    content: "";
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.50);
+    border: 2px solid #fff;
+}
+
+div.parent section .car-details a.btn-discover:hover span{
+    animation: anim-btn-discover-text 250ms linear ;
+}
+
+div.parent section .car-details a.btn-discover:hover i{
+    animation: anim-btn-discover-icon 250ms linear ;
+}
+div.parent section .car-details a.btn-discover:hover:after{
+    animation: anim-btn-discover-after 250ms linear ;
+}
+
+
+
+@keyframes anim-btn-discover-text{
+    from{
+        left: 0px;
+    }
+    to{
+        left: 10px;
+    }
+}
+
+@keyframes anim-btn-discover-icon{
+    from{
+        left: 0px;
+    }
+    to{
+        left: 15px;
+        transform: scale(2, 2);
+        color: #d71758;
+    }
+}
+
+
+@keyframes anim-btn-discover-after{
+    from{
+        background-color: rgba(255, 255, 255, 0.20);
+    }
+    to{
+        background-color: #fff;
+    }
+}
+
+
+div.parent section .car-pic{
+    position: relative;
+    z-index: 3;
+    top: -60px;
+    right: 90px;
+    /*width: -1000px;*/
+}
+
+div.parent section .car-pic img{
+    width: 100%;
+}
+
+div.parent section .navigate{
+    position: relative;
+    z-index: 3;
+    display: inline-flex;
+    float: right;
+}
+
+div.parent section .navigate button{
+    color: #fff;
+    font-size: 15px;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: #4b4c68;
+    border: 1px solid #4b4c68;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+}
+
+div.parent section .navigate button:hover{
+    color: #d71758;
+    background-color: #fff;
+    border: 1px solid #4b4c68;
+}
+
+div.parent section .navigate .swiper-button-next, .swiper-button-prev{
+    background-image: none;
+    position: static;
+    top: 0;
+    margin-top: 0;
+    height: inherit;
+}
+
+
+div.parent .stripe{
+    height: 60px;
+    position: absolute;
+    background-color: #fea500;
+    bottom: 200px;
+    left: 0;
+}
+
+div.parent .one{
+    width: 125%;
+    transform: rotate(145deg);
+}
+
+div.parent .two{
+    width: 150%;
+    transform: rotate(145deg);
+}
+
+

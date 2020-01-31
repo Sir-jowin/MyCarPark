@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jo4</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/line-awesome.css">
+    <link rel="stylesheet" href="css/unsemantic-grid-responsive-tablet.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="parent">
+        <header>
+            <div class="grid-container">
+                <div class="grid-20">
+                    <a href="#" class="logo">MyCarPacks</a>
+                </div>
+                
+                
+                <div class="grid-60">
+                    
+                        <ul class="nav navigation">
+                            <li><a href="#">cars</a></li>
+                            <li><a href="#">history</a></li>
+                            <li><a href="#">technology</a></li>
+                            <li><a href="#">production</a></li>
+                            <li><a href="#">reviews</a></li>
+                        </ul>
+                    
+                </div>
+                <div class="grid-20">
+                    <ul class="nav social-icons">
+                        <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-shopping-basket"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <section>
+            <span class="year">1789</span>
+            <div class="grid-container">
+            <div class="grid-45"> 
+                <div class="car-details">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <h1 class="name">
+                                    chevrolet<br>
+                                    <span>camaro</span>
+            
+                                </h1>
+                            </div>
+                            <div class="swiper-slide">
+                                <h1 class="name">
+                                    porsche<br>
+                                    <span>cayenne</span>
+            
+                                </h1>
+                            </div>
+                            <div class="swiper-slide">
+                                <h1 class="name">
+                                    ford<br>
+                                    <span>mustang</span>
+            
+                                </h1>
+                            </div>
+                            <div class="swiper-slide">
+                                <h1 class="name">
+                                    nissan<br>
+                                    <span>skyline</span>
+            
+                                </h1>
+                            </div>
+                            <div class="swiper-slide">
+                                <h1 class="name">
+                                    land rover<br>
+                                    <span>defender</span>
+            
+                                </h1>
+                            </div>
+                            <div class="swiper-slide">
+                                <h1 class="name">
+                                    mercedes<br>
+                                    <span>g-wagon</span>
+            
+                                </h1>
+                            </div>
+                            <div class="swiper-slide">
+                                <h1 class="name">
+                                   range rover <br>
+                                    <span>range</span>
+            
+                                </h1>
+                            </div>
+                            <div class="swiper-slide">
+                                <h1 class="name">
+                                    challenger<br>
+                                    <span>dodge</span>
+            
+                                </h1>
+                            </div>
+                            <div class="swiper-slide">
+                                <h1 class="name">
+                                    jowin<br>
+                                    <span>josco</span>
+            
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p class="about">
+                        Lorem ipsum livepool Manchester will go dolor sit amet consectetur adipisicing elit. Similique beatae ea, nemo quod porro tempora a numquam eos voluptate reiciendis qui deserunt veritatis fuga! Ipsam, fugiat.
+                    </p>
+                    <h4 class="production-year">Production<span><br>2000-2012</span></h4>
+                    <a href="#" class="btn-discover">
+                        <span>discover</span> 
+                        <i class="fas fa-long-arrow-alt-right"></i>
+                    </a>
+                
+                </div>
+
+                </div>
+                <div class="grid-55">
+                    <div class="car-pic">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="assets/white-chevy.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/yellow-porsche.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/grey-gwagon.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/black-skyline.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/grey-defender.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assetsblack-mustang.png/" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/navy-range.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/red-dodge.png" alt="">
+                                </div>
+                                
+                            
+                        </div>
+                       </div> 
+                    </div>
+                <div class="navigate">
+                    <button class="swiper-button-prev">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="swiper-button-next">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+            </div>
+        </section>
+        <div class="stripe one"></div>
+        <div class="stripe two"></div>
+    </div> 
+    </div>
+    
+    <script src="js/swiper.min.js"></script>
+    <script>
+        var swiper= new Swiper('.swiper-container', {
+            navigation: {
+                nextEl:'.swiper-button-next',
+                prevEl:'.swiper-button-prev',
+            },
+            loop: true,
+            spaceBetween: 200,
+
+
+        });
+        
+    </script>
+</body>
+</html>
